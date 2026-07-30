@@ -1,0 +1,386 @@
+/* Admin Dashboard Specific Styles */
+.sidebar_logo_div {
+  text-align: center;
+}
+
+.dashboard_avatar {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 1px solid var(--gold_bright);
+  object-fit: cover;
+}
+
+.dash_profile_main {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  background: transparent;
+  transition: all 0.2s ease;
+  min-width: 180px !important;
+}
+
+.admin_dashboard_layout {
+  display: flex;
+  min-height: 100vh;
+  background: #060A0B;
+  color: #FFFFFF;
+}
+
+.admin_sidebar {
+  width: 260px;
+  background: #060A0B;
+  border-right: 1.5px solid #DDA32D;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.admin_content_inner {
+  padding: 20px;
+  height: calc(100vh - 85px);
+  overflow-y: scroll;
+}
+
+.admin_content_inner::-webkit-scrollbar {
+  width: 0;
+}
+
+.admin_main_content {
+  flex-grow: 1;
+  background: #060A0B;
+}
+
+.sidebar_menu_section_title {
+  color: #C9851B;
+  /* Gold/Orange header like in figma */
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+.sidebar_menu_link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1.25rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  margin-bottom: 0.65rem;
+}
+
+.sidebar_menu_link i {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  transition: color 0.25s ease;
+}
+
+.sidebar_menu_link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+}
+
+.sidebar_menu_link.active {
+  background: #D39529 !important;
+  /* Gold background */
+  color: #FFFFFF !important;
+  font-weight: 700;
+  box-shadow: 0px 4px 15px rgba(211, 149, 41, 0.3);
+}
+
+.sidebar_menu_link.active i {
+  color: #FFFFFF !important;
+}
+
+.admin_top_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 12px 20px;
+  border-bottom: 1px solid #DDA32D;
+}
+
+.admin_header_search {
+  max-width: 320px;
+  position: relative;
+}
+
+.admin_metric_card {
+  background: #FFFFFF29;
+  border: 1px solid #FFFFFF4D;
+  border-radius: 16px;
+  padding: 16px 12px;
+  height: 100%;
+}
+
+.admin_metric_card_inner {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.admin_metric_card_inner h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+.admin_metric_card_text h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #F9D15F;
+  margin-top: 15px;
+}
+
+.admin_metric_icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(249, 209, 95, 0.1);
+  color: var(--gold_bright);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.chart_card_box {
+  background: #FFFFFF29;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  height: 100%;
+}
+
+.activity_log_card {
+  background: #FFFFFF29;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px 20px;
+  height: 100%;
+}
+
+.activity_log_item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 1.25rem;
+}
+
+.activity_log_item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.activity_icon_box {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(249, 209, 95, 0.15);
+  color: var(--gold_bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.admin_table_wrapper {
+  background: #FFFFFF29;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px 20px;
+  margin-top: 2rem;
+}
+
+.badge_purchased {
+  border: 1px solid #34C759;
+  color: #34C759;
+  background: rgba(52, 199, 89, 0.05);
+  padding: 0.35rem 0.85rem;
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.badge_cart {
+  border: 1px solid #007AFF;
+  color: #007AFF;
+  background: rgba(0, 122, 255, 0.05);
+  padding: 0.35rem 0.85rem;
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.badge_cancelled {
+  border: 1px solid #FF3B30;
+  color: #FF3B30;
+  background: rgba(255, 59, 48, 0.05);
+  padding: 0.35rem 0.85rem;
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+/* Responsive Mobile Sidebar Styles */
+.sidebar_backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1040;
+}
+
+.dash_thp {
+  margin-bottom: 0;
+  min-width: 130px;
+  padding: 6px 0px;
+}
+
+.dash_profile_main_div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: end;
+}
+
+@media (max-width: 991px) {
+  .admin_content_inner {
+    padding: 20px;
+    height: auto;
+  }
+
+  .admin_sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    height: 100vh;
+    z-index: 1050;
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .admin_sidebar.mobile_sidebar_open {
+    left: 0;
+  }
+
+  .admin_main_content {
+    width: 100%;
+  }
+
+  .admin_top_header {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .admin_header_search {
+    order: 3;
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .activity_log_item {
+    flex-wrap: wrap;
+    align-items: end;
+  }
+
+  .admin_table_wrapper {
+    padding: 20px 15px;
+  }
+
+  .chart_card_box,
+  .activity_log_card {
+    padding: 20px 15px;
+  }
+
+  .dash_profile_main_div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+    justify-content: end;
+  }
+
+  .dash_profile_main {
+    background: none;
+    border: none;
+    align-items: center;
+    gap: 5px;
+    transition: all .2s;
+    display: flex;
+    min-width: auto !important;
+  }
+}
+
+/* Custom Stateful Dropdowns inside Admin Dashboard */
+.admin_dropdown_menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 6px;
+  background: #141819;
+  border: 1px solid var(--gold_border);
+  border-radius: 10px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  min-width: 130px;
+  padding: 6px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin_dropdown_item {
+  background: transparent;
+  border: none;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  width: 100%;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+
+.admin_dropdown_item:hover {
+  background: rgba(249, 209, 95, 0.1);
+  color: var(--gold_bright);
+}
+
+.admin_dropdown_item.active {
+  background: #D39529;
+  color: #FFFFFF;
+}
